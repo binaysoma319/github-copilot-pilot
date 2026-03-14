@@ -1,0 +1,8 @@
+# All files require architect review
+* @your-github-username
+
+# Infrastructure files
+/terraform/ @devops-team
+
+# Application code
+/src/ @backend-team
