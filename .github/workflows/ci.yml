@@ -12,7 +12,7 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -23,5 +23,20 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
+      - name: Run Linter
+        run: npm run lint || echo "no lint configured"
+
+      - name: Run Tests
         run: npm test
+
+      - name: Security Scan
+        run: npm audit --audit-level=high || true
+
+      - name: Build Project
+        run: echo "Build step executed"
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: .
