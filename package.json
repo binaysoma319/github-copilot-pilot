@@ -1,0 +1,21 @@
+{
+  "name": "github-copilot-pilot",
+  "version": "1.0.0",
+  "description": "Pilot for Github copilot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binaysoma319/github-copilot-pilot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/binaysoma319/github-copilot-pilot/issues"
+  },
+  "homepage": "https://github.com/binaysoma319/github-copilot-pilot#readme"
+}
